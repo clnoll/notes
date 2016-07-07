@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>SITENAME</title><link href="https://clnoll.github.io/notes/" rel="alternate"></link><link href="https://clnoll.github.io/notes/feeds/all.atom.xml" rel="self"></link><id>https://clnoll.github.io/notes/</id><updated>2016-06-27T00:00:00-07:00</updated><entry><title>Example page</title><link href="https://clnoll.github.io/notes/example-page.html" rel="alternate"></link><published>2016-06-27T00:00:00-07:00</published><author><name>AUTHOR</name></author><id>tag:clnoll.github.io,2016-06-27:notes/example-page.html</id><summary type="html">&lt;p&gt;Here is some inline math: &lt;span class="math"&gt;\(\frac{d}{dt} t = 1\)&lt;/span&gt;.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>SITENAME</title><link href="https://clnoll.github.io/notes/" rel="alternate"></link><link href="https://clnoll.github.io/notes/feeds/all.atom.xml" rel="self"></link><id>https://clnoll.github.io/notes/</id><updated>2016-06-27T00:00:00-07:00</updated><entry><title>Example page</title><link href="https://clnoll.github.io/notes/example-page.html" rel="alternate"></link><published>2016-06-27T00:00:00-07:00</published><author><name>AUTHOR</name></author><id>tag:clnoll.github.io,2016-06-27:notes/example-page.html</id><summary type="html">&lt;h4&gt;Fundamental Theorem of Calculus&lt;/h4&gt;
+&lt;h5&gt;Part 1&lt;/h5&gt;
+&lt;p&gt;If f is continuous on 􏰗&lt;span class="math"&gt;\([a,b]\)&lt;/span&gt;􏰘, then the function g defined by:
+&lt;/p&gt;
+&lt;div class="math"&gt;$$g(x) = \int_{a}^{b} g(t) dt    a ≤ x ≤ b$$&lt;/div&gt;
+&lt;p&gt;
+is continuous on &lt;span class="math"&gt;\([a,b]\)&lt;/span&gt; and differentiable on &lt;span class="math"&gt;\((a,b)\)&lt;/span&gt; and &lt;span class="math"&gt;\(g'(x) = f(x)\)&lt;/span&gt;.&lt;/p&gt;
+&lt;h5&gt;Part 2&lt;/h5&gt;
+&lt;p&gt;If f is continuous on 􏰗&lt;span class="math"&gt;\([a,b]\)&lt;/span&gt;􏰘, then
+&lt;/p&gt;
+&lt;div class="math"&gt;$$\int_{a}^{b} f(x)dx = F(b) - F(a)$$&lt;/div&gt;
+&lt;p&gt;
+where &lt;span class="math"&gt;\(F\)&lt;/span&gt; is any antiderivative &lt;span class="math"&gt;\(f\)&lt;/span&gt;, that is, a function such that &lt;span class="math"&gt;\(F' = f\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Here is some inline math: &lt;span class="math"&gt;\(\frac{d}{dt} t = 1\)&lt;/span&gt;.&lt;/p&gt;
 &lt;p&gt;Here is some block math&lt;sup id="sf-example-page-1-back"&gt;&lt;a href="#sf-example-page-1" title="with a footnote." class="simple-footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;:&lt;/p&gt;
 &lt;div class="math"&gt;$$\int \frac{sin \theta}{cos \theta} d\theta = -ln(cos \theta) + C$$&lt;/div&gt;
 &lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
