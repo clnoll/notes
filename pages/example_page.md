@@ -7,7 +7,7 @@ Date: 2016-06-27
 
 ##### Part 1
 If f is continuous on 􏰗$[a,b]$􏰘, then the function g defined by:
-$$g(x) = \int_{a}^{b} g(t) dt    a ≤ x ≤ b$$
+$$g(x) = \int_{a}^{b} g(t) ~ dt, ~{a ≤ x ≤ b}$$
 is continuous on $[a,b]$ and differentiable on $(a,b)$ and $g'(x) = f(x)$.
 
 ##### Part 2
