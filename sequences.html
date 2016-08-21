@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 
-        <title>Example page</title>
+        <title>Sequences</title>
         <meta charset="utf-8" />
         <link href="https://clnoll.github.io/notes/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="SITENAME Full Atom Feed" />
         <link href="https://clnoll.github.io/notes/feeds/misc.atom.xml" type="application/atom+xml" rel="alternate" title="SITENAME Categories Atom Feed" />
@@ -51,35 +51,55 @@
 
             <header>
               <h2 class="entry-title">
-                <a href="https://clnoll.github.io/notes/example-page.html" rel="bookmark"
-                   title="Permalink to Example page">Example page</a></h2>
+                <a href="https://clnoll.github.io/notes/sequences.html" rel="bookmark"
+                   title="Permalink to Sequences">Sequences</a></h2>
            
             </header>
             <footer class="post-info">
-              <abbr class="published" title="2016-06-27T00:00:00-07:00">
-                Mon 27 June 2016
+              <abbr class="published" title="2016-08-13T00:00:00-07:00">
+                Sat 13 August 2016
               </abbr>
               <address class="vcard author">By 
                 <a class="url fn" href="https://clnoll.github.io/notes/author/author.html"> AUTHOR</a>
               </address>
             </footer><!-- /.post-info -->
             <div class="entry-content">
-              <h4>Fundamental Theorem of Calculus</h4>
-<h5>Part 1</h5>
-<p>If f is continuous on 􏰗<span class="math">\([a,b]\)</span>􏰘, then the function g defined by:
-</p>
-<div class="math">$$g(x) = \int_{a}^{b} g(t) ~ dt, ~{a ≤ x ≤ b}$$</div>
-<p>
-is continuous on <span class="math">\([a,b]\)</span> and differentiable on <span class="math">\((a,b)\)</span> and <span class="math">\(g'(x) = f(x)\)</span>.</p>
-<h5>Part 2</h5>
-<p>If f is continuous on 􏰗<span class="math">\([a,b]\)</span>􏰘, then
-</p>
-<div class="math">$$\int_{a}^{b} f(x)dx = F(b) - F(a)$$</div>
-<p>
-where <span class="math">\(F\)</span> is any antiderivative <span class="math">\(f\)</span>, that is, a function such that <span class="math">\(F' = f\)</span>.</p>
-<p>Here is some inline math: <span class="math">\(\frac{d}{dt} t = 1\)</span>.</p>
-<p>Here is some block math<sup id="sf-example-page-1-back"><a href="#sf-example-page-1" title="with a footnote." class="simple-footnote">1</a></sup>:</p>
-<div class="math">$$\int \frac{sin \theta}{cos \theta} d\theta = -ln(cos \theta) + C$$</div>
+              <p><span class="math">\(\newcommand{\red}[1]{\color{red}{\text{#1}}}\)</span></p>
+<h4>Sequences: definitions &amp; theorems</h4>
+<p>(1) <span class="math">\(\red{Basic limit definition}\)</span>: <span class="math">\(\lim_{n \to \infty} a_n = L\)</span>, aka  <span class="math">\(a_n \to L\)</span> as <span class="math">\(n \to \infty\)</span>
+   A sequence has a limit if <span class="math">\(a_n\)</span> approaches limit <span class="math">\(L\)</span> as <span class="math">\(n\)</span> increases. If a limit exists, the sequence is convergent; else, divergent.</p>
+<p>(2) <span class="math">\(\red{Rigorous definition w/interval}\)</span>: A limit exists for a sequence if, as <span class="math">\(\lim_{n \to \infty}\)</span>, for an interval <span class="math">\(\varepsilon \pm L\)</span>, an <span class="math">\(N\)</span> exists for which all subsequent values of <span class="math">\(a_n\)</span> are within <span class="math">\(|\varepsilon - L|\)</span></p>
+<p>(3) Theorem w/ <span class="math">\(n\)</span> as an integer: <span class="math">\(\lim_{n \to \infty} f(x) = L\)</span> and <span class="math">\(f(n) = a_n\)</span> when <span class="math">\(n\)</span> is an integer, <span class="math">\(\lim_{n \to \infty} a_n = L\)</span> [<span class="math">\(\red{If you know a continuous function that goes through the points and it has a limit, then just use that limit}\)</span>]</p>
+<p>(4) Fractions with <span class="math">\((\text{denominator})^n\)</span>:<span class="math">\(lim_{n \to \infty} \frac{1}{n^r} = 0\)</span> if <span class="math">\(r &gt; 0\)</span> &lt;- converges to 0</p>
+<p>(5) Definition for <span class="math">\(lim_{n \to \infty}\)</span> diverges to <span class="math">\(\infty\)</span>: for every positive number <span class="math">\(M\)</span>, if <span class="math">\(a_n &gt; M\)</span> there is an integer <span class="math">\(N\)</span> greater than <span class="math">\(n\)</span></p>
+<p>For convergent sequences (<span class="math">\(c\)</span> is a constant): </p>
+<ul>
+<li><span class="math">\(lim_{n \to \infty}(a_n + b_n) = lim_{n \to \infty}(a_n) + lim_{n \to \infty}(b_n)\)</span></li>
+<li><span class="math">\(lim_{n \to \infty}(a_n - b_n) = lim_{n \to \infty}(a_n) - lim_{n \to \infty}(b_n)\)</span></li>
+<li><span class="math">\(lim_{n \to \infty} ca_n = c lim_{n \to \infty}a_n\)</span>, <span class="math">\(lim_{n \to \infty} c = c\)</span></li>
+<li><span class="math">\(lim_{n \to \infty}(a_n b_n) = lim_{n \to \infty} a_n * lim_{n \to \infty} b_n\)</span></li>
+<li><span class="math">\(lim_{n \to \infty} \frac{a_n}{b_n} = \frac{lim_{n \to \infty} a_n}{lim_{n \to \infty} b_n}\)</span> if <span class="math">\(lim_{n \to \infty} b_n \neq 0\)</span></li>
+<li><span class="math">\(lim_{n \to \infty}a_n^p = [lim_{n \to \infty} a_n]^p\)</span> if <span class="math">\(p &gt; 0\)</span> and <span class="math">\(a_n &gt; 0\)</span></li>
+</ul>
+<p>[<span class="math">\(\red{Limit of some-series-combined-using-some-operations is the same operations applied to the individual series' limits}\)</span>]</p>
+<p><span class="math">\(\red{Squeeze Theorem adaptation}\)</span>: if <span class="math">\(a_n \le b_n \le c_n\)</span> for <span class="math">\(n \ge n_0\)</span> and <span class="math">\(lim_{n \to \infty} a_n = lim_{n \to \infty} c_n = L\)</span>, then <span class="math">\(lim_{n \to \infty} b_n = L\)</span></p>
+<p>(6) <span class="math">\(\red{Absolute value theorem}\)</span>: if <span class="math">\(lim_{n \to \infty} |a_n| = 0\)</span>, then <span class="math">\(lim_{n \to \infty} a_n = 0\)</span></p>
+<p>(7) If we apply a continuous function to a convergent sequence, the result is convergent: if <span class="math">\(lim_{n \to \infty} a_n = L\)</span> and <span class="math">\(f\)</span> is continuous at <span class="math">\(L\)</span>, then <span class="math">\(f(a_n) = f(L)\)</span> [<span class="math">\(\red{Limit of some function of a series is: the function applied to the series' limit}\)</span>]</p>
+<p>(8) for <span class="math">\(a_n = \frac{n!}{n^n}\)</span>: <span class="math">\(a_n = \frac{1}{n}(\frac{2*3*...*n}{n*n*...*n})\)</span>; numerator is <span class="math">\(\le\)</span> denominator, so <span class="math">\(0 \lt a_n \le \frac{1}{n}\)</span>; <span class="math">\(\frac{1}{n} \to 0\)</span> as <span class="math">\(n \to \infty\)</span></p>
+<p>(9) for <span class="math">\(a_n = r^n\)</span>: <span class="math">\(\{r^n\}\)</span> is convergent if <span class="math">\(-1 &lt; r \le 1\)</span> and divergent for all other values of <span class="math">\(r\)</span>; <span class="math">\(lim_{n \to \infty} r^n = 0\)</span> if <span class="math">\(-1 &lt; r &lt; 1\)</span>, <span class="math">\(1\)</span> if <span class="math">\(r = 1\)</span></p>
+<p>(10) Definition for increasing/decreasing/monotonic:</p>
+<ul>
+<li>increasing: <span class="math">\(a &lt; a_{n + 1}\)</span> for all <span class="math">\(n \ge 1\)</span>, aka <span class="math">\(a_1 &lt; a_2 &lt; ... &lt; a_n\)</span> </li>
+<li>decreasing: <span class="math">\(a &gt; a_{n + 1}\)</span> for all <span class="math">\(n \ge 1\)</span>, aka <span class="math">\(a_1 &gt; a_2 &gt; ... &gt; a_n\)</span> </li>
+<li>monotonic if increasing or decreasing</li>
+</ul>
+<p>(11) Definition for bounded above/bounded below/bounded sequence:</p>
+<ul>
+<li>bounded above: <span class="math">\(M\)</span> exists such that <span class="math">\(a_n \le M\)</span>, for all <span class="math">\(n \ge 1\)</span></li>
+<li>bounded below: <span class="math">\(m\)</span> exists such that <span class="math">\(m \le a_n\)</span>, for all <span class="math">\(n \ge 1\)</span></li>
+<li>bounded sequence: bounded above &amp; below</li>
+</ul>
+<p>(12) Monotonic sequence theorem: every bounded monotonic sequence is convergent.</p>
 <script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
     var align = "center",
         indent = "0em",
@@ -136,7 +156,7 @@ where <span class="math">\(F\)</span> is any antiderivative <span class="math">\
         "}";
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-</script><ol class="simple-footnotes"><li id="sf-example-page-1">with a footnote. <a href="#sf-example-page-1-back" class="simple-footnote-back">↩</a></li></ol>
+</script>
             </div><!-- /.entry-content -->
 
 

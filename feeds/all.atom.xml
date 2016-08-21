@@ -1,9 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>SITENAME</title><link href="https://clnoll.github.io/notes/" rel="alternate"></link><link href="https://clnoll.github.io/notes/feeds/all.atom.xml" rel="self"></link><id>https://clnoll.github.io/notes/</id><updated>2016-06-27T00:00:00-07:00</updated><entry><title>Example page</title><link href="https://clnoll.github.io/notes/example-page.html" rel="alternate"></link><published>2016-06-27T00:00:00-07:00</published><author><name>AUTHOR</name></author><id>tag:clnoll.github.io,2016-06-27:notes/example-page.html</id><summary type="html">&lt;h4&gt;Fundamental Theorem of Calculus&lt;/h4&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>SITENAME</title><link href="https://clnoll.github.io/notes/" rel="alternate"></link><link href="https://clnoll.github.io/notes/feeds/all.atom.xml" rel="self"></link><id>https://clnoll.github.io/notes/</id><updated>2016-08-13T00:00:00-07:00</updated><entry><title>Sequences</title><link href="https://clnoll.github.io/notes/sequences.html" rel="alternate"></link><published>2016-08-13T00:00:00-07:00</published><author><name>AUTHOR</name></author><id>tag:clnoll.github.io,2016-08-13:notes/sequences.html</id><summary type="html">&lt;p&gt;&lt;span class="math"&gt;\(\newcommand{\red}[1]{\color{red}{\text{#1}}}\)&lt;/span&gt;&lt;/p&gt;
+&lt;h4&gt;Sequences: definitions &amp;amp; theorems&lt;/h4&gt;
+&lt;p&gt;(1) &lt;span class="math"&gt;\(\red{Basic limit definition}\)&lt;/span&gt;: &lt;span class="math"&gt;\(\lim_{n \to \infty} a_n = L\)&lt;/span&gt;, aka  &lt;span class="math"&gt;\(a_n \to L\)&lt;/span&gt; as &lt;span class="math"&gt;\(n \to \infty\)&lt;/span&gt;
+   A sequence has a limit if &lt;span class="math"&gt;\(a_n\)&lt;/span&gt; approaches limit &lt;span class="math"&gt;\(L\)&lt;/span&gt; as &lt;span class="math"&gt;\(n\)&lt;/span&gt; increases. If a limit exists, the sequence is convergent; else, divergent.&lt;/p&gt;
+&lt;p&gt;(2) &lt;span class="math"&gt;\(\red{Rigorous definition w/interval}\)&lt;/span&gt;: A limit exists for a sequence if, as &lt;span class="math"&gt;\(\lim_{n \to \infty}\)&lt;/span&gt;, for an interval &lt;span class="math"&gt;\(\varepsilon \pm L\)&lt;/span&gt;, an &lt;span class="math"&gt;\(N\)&lt;/span&gt; exists for which all subsequent values of &lt;span class="math"&gt;\(a_n\)&lt;/span&gt; are within &lt;span class="math"&gt;\(|\varepsilon - L|\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;(3) Theorem w/ &lt;span class="math"&gt;\(n\)&lt;/span&gt; as an integer: &lt;span class="math"&gt;\(\lim_{n \to \infty} f(x) = L\)&lt;/span&gt; and &lt;span class="math"&gt;\(f(n) = a_n\)&lt;/span&gt; when &lt;span class="math"&gt;\(n\)&lt;/span&gt; is an integer, &lt;span class="math"&gt;\(\lim_{n \to \infty} a_n = L\)&lt;/span&gt; [&lt;span class="math"&gt;\(\red{If you know a continuous function that goes through the points and it has a limit, then just use that limit}\)&lt;/span&gt;]&lt;/p&gt;
+&lt;p&gt;(4) Fractions with &lt;span class="math"&gt;\((\text{denominator})^n\)&lt;/span&gt;:&lt;span class="math"&gt;\(lim_{n \to \infty} \frac{1}{n^r} = 0\)&lt;/span&gt; if &lt;span class="math"&gt;\(r &amp;gt; 0\)&lt;/span&gt; &amp;lt;- converges to 0&lt;/p&gt;
+&lt;p&gt;(5) Definition for &lt;span class="math"&gt;\(lim_{n \to \infty}\)&lt;/span&gt; diverges to &lt;span class="math"&gt;\(\infty\)&lt;/span&gt;: for every positive number &lt;span class="math"&gt;\(M\)&lt;/span&gt;, if &lt;span class="math"&gt;\(a_n &amp;gt; M\)&lt;/span&gt; there is an integer &lt;span class="math"&gt;\(N\)&lt;/span&gt; greater than &lt;span class="math"&gt;\(n\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;For convergent sequences (&lt;span class="math"&gt;\(c\)&lt;/span&gt; is a constant): &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span class="math"&gt;\(lim_{n \to \infty}(a_n + b_n) = lim_{n \to \infty}(a_n) + lim_{n \to \infty}(b_n)\)&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class="math"&gt;\(lim_{n \to \infty}(a_n - b_n) = lim_{n \to \infty}(a_n) - lim_{n \to \infty}(b_n)\)&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class="math"&gt;\(lim_{n \to \infty} ca_n = c lim_{n \to \infty}a_n\)&lt;/span&gt;, &lt;span class="math"&gt;\(lim_{n \to \infty} c = c\)&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class="math"&gt;\(lim_{n \to \infty}(a_n b_n) = lim_{n \to \infty} a_n * lim_{n \to \infty} b_n\)&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class="math"&gt;\(lim_{n \to \infty} \frac{a_n}{b_n} = \frac{lim_{n \to \infty} a_n}{lim_{n \to \infty} b_n}\)&lt;/span&gt; if &lt;span class="math"&gt;\(lim_{n \to \infty} b_n \neq 0\)&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class="math"&gt;\(lim_{n \to \infty}a_n^p = [lim_{n \to \infty} a_n]^p\)&lt;/span&gt; if &lt;span class="math"&gt;\(p &amp;gt; 0\)&lt;/span&gt; and &lt;span class="math"&gt;\(a_n &amp;gt; 0\)&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;[&lt;span class="math"&gt;\(\red{Limit of some-series-combined-using-some-operations is the same operations applied to the individual series' limits}\)&lt;/span&gt;]&lt;/p&gt;
+&lt;p&gt;&lt;span class="math"&gt;\(\red{Squeeze Theorem adaptation}\)&lt;/span&gt;: if &lt;span class="math"&gt;\(a_n \le b_n \le c_n\)&lt;/span&gt; for &lt;span class="math"&gt;\(n \ge n_0\)&lt;/span&gt; and &lt;span class="math"&gt;\(lim_{n \to \infty} a_n = lim_{n \to \infty} c_n = L\)&lt;/span&gt;, then &lt;span class="math"&gt;\(lim_{n \to \infty} b_n = L\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;(6) &lt;span class="math"&gt;\(\red{Absolute value theorem}\)&lt;/span&gt;: if &lt;span class="math"&gt;\(lim_{n \to \infty} |a_n| = 0\)&lt;/span&gt;, then &lt;span class="math"&gt;\(lim_{n \to \infty} a_n = 0\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;(7) If we apply a continuous function to a convergent sequence, the result is convergent: if &lt;span class="math"&gt;\(lim_{n \to \infty} a_n = L\)&lt;/span&gt; and &lt;span class="math"&gt;\(f\)&lt;/span&gt; is continuous at &lt;span class="math"&gt;\(L\)&lt;/span&gt;, then &lt;span class="math"&gt;\(f(a_n) = f(L)\)&lt;/span&gt; [&lt;span class="math"&gt;\(\red{Limit of some function of a series is: the function applied to the series' limit}\)&lt;/span&gt;]&lt;/p&gt;
+&lt;p&gt;(8) for &lt;span class="math"&gt;\(a_n = \frac{n!}{n^n}\)&lt;/span&gt;: &lt;span class="math"&gt;\(a_n = \frac{1}{n}(\frac{2*3*...*n}{n*n*...*n})\)&lt;/span&gt;; numerator is &lt;span class="math"&gt;\(\le\)&lt;/span&gt; denominator, so &lt;span class="math"&gt;\(0 \lt a_n \le \frac{1}{n}\)&lt;/span&gt;; &lt;span class="math"&gt;\(\frac{1}{n} \to 0\)&lt;/span&gt; as &lt;span class="math"&gt;\(n \to \infty\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;(9) for &lt;span class="math"&gt;\(a_n = r^n\)&lt;/span&gt;: &lt;span class="math"&gt;\(\{r^n\}\)&lt;/span&gt; is convergent if &lt;span class="math"&gt;\(-1 &amp;lt; r \le 1\)&lt;/span&gt; and divergent for all other values of &lt;span class="math"&gt;\(r\)&lt;/span&gt;; &lt;span class="math"&gt;\(lim_{n \to \infty} r^n = 0\)&lt;/span&gt; if &lt;span class="math"&gt;\(-1 &amp;lt; r &amp;lt; 1\)&lt;/span&gt;, &lt;span class="math"&gt;\(1\)&lt;/span&gt; if &lt;span class="math"&gt;\(r = 1\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;(10) Definition for increasing/decreasing/monotonic:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;increasing: &lt;span class="math"&gt;\(a &amp;lt; a_{n + 1}\)&lt;/span&gt; for all &lt;span class="math"&gt;\(n \ge 1\)&lt;/span&gt;, aka &lt;span class="math"&gt;\(a_1 &amp;lt; a_2 &amp;lt; ... &amp;lt; a_n\)&lt;/span&gt; &lt;/li&gt;
+&lt;li&gt;decreasing: &lt;span class="math"&gt;\(a &amp;gt; a_{n + 1}\)&lt;/span&gt; for all &lt;span class="math"&gt;\(n \ge 1\)&lt;/span&gt;, aka &lt;span class="math"&gt;\(a_1 &amp;gt; a_2 &amp;gt; ... &amp;gt; a_n\)&lt;/span&gt; &lt;/li&gt;
+&lt;li&gt;monotonic if increasing or decreasing&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;(11) Definition for bounded above/bounded below/bounded sequence:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;bounded above: &lt;span class="math"&gt;\(M\)&lt;/span&gt; exists such that &lt;span class="math"&gt;\(a_n \le M\)&lt;/span&gt;, for all &lt;span class="math"&gt;\(n \ge 1\)&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;bounded below: &lt;span class="math"&gt;\(m\)&lt;/span&gt; exists such that &lt;span class="math"&gt;\(m \le a_n\)&lt;/span&gt;, for all &lt;span class="math"&gt;\(n \ge 1\)&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;bounded sequence: bounded above &amp;amp; below&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;(12) Monotonic sequence theorem: every bounded monotonic sequence is convergent.&lt;/p&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    var location_protocol = (false) ? 'https' : document.location.protocol;
+    if (location_protocol !== 'http' &amp;&amp; location_protocol !== 'https') location_protocol = 'https:';
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</summary></entry><entry><title>Example page</title><link href="https://clnoll.github.io/notes/example-page.html" rel="alternate"></link><published>2016-06-27T00:00:00-07:00</published><author><name>AUTHOR</name></author><id>tag:clnoll.github.io,2016-06-27:notes/example-page.html</id><summary type="html">&lt;h4&gt;Fundamental Theorem of Calculus&lt;/h4&gt;
 &lt;h5&gt;Part 1&lt;/h5&gt;
 &lt;p&gt;If f is continuous on 􏰗&lt;span class="math"&gt;\([a,b]\)&lt;/span&gt;􏰘, then the function g defined by:
 &lt;/p&gt;
-&lt;div class="math"&gt;$$g(x) = \int_{a}^{b} g(t) dt    a ≤ x ≤ b$$&lt;/div&gt;
+&lt;div class="math"&gt;$$g(x) = \int_{a}^{b} g(t) ~ dt, ~{a ≤ x ≤ b}$$&lt;/div&gt;
 &lt;p&gt;
 is continuous on &lt;span class="math"&gt;\([a,b]\)&lt;/span&gt; and differentiable on &lt;span class="math"&gt;\((a,b)\)&lt;/span&gt; and &lt;span class="math"&gt;\(g'(x) = f(x)\)&lt;/span&gt;.&lt;/p&gt;
 &lt;h5&gt;Part 2&lt;/h5&gt;
@@ -71,4 +163,86 @@ where &lt;span class="math"&gt;\(F\)&lt;/span&gt; is any antiderivative &lt;span
         "}";
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-&lt;/script&gt;&lt;ol class="simple-footnotes"&gt;&lt;li id="sf-example-page-1"&gt;with a footnote. &lt;a href="#sf-example-page-1-back" class="simple-footnote-back"&gt;↩&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;</summary></entry></feed>
+&lt;/script&gt;&lt;ol class="simple-footnotes"&gt;&lt;li id="sf-example-page-1"&gt;with a footnote. &lt;a href="#sf-example-page-1-back" class="simple-footnote-back"&gt;↩&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;</summary></entry><entry><title>Trigonometric Identities</title><link href="https://clnoll.github.io/notes/trig-identities.html" rel="alternate"></link><published>2016-06-27T00:00:00-07:00</published><author><name>AUTHOR</name></author><id>tag:clnoll.github.io,2016-06-27:notes/trig-identities.html</id><summary type="html">&lt;h4&gt;Trigonometric Identities&lt;/h4&gt;
+&lt;div class="math"&gt;$$ sinx = \frac{O}{H} $$&lt;/div&gt;
+&lt;div class="math"&gt;$$ cosx = \frac{A}{H} $$&lt;/div&gt;
+&lt;div class="math"&gt;$$ tanx = \frac{O}{A} = \frac{sinx}{cosx} $$&lt;/div&gt;
+&lt;div class="math"&gt;$$ cscx = \frac{H}{O} $$&lt;/div&gt;
+&lt;div class="math"&gt;$$ secx = \frac{H}{A} $$&lt;/div&gt;
+&lt;div class="math"&gt;$$ cotx = \frac{A}{O} = \frac{cosx}{sinx} $$&lt;/div&gt;
+&lt;p&gt;Some substitutions
+&lt;/p&gt;
+&lt;div class="math"&gt;$$ sin^2x + cos^2x = 1 $$&lt;/div&gt;
+&lt;div class="math"&gt;$$ tan^2x + 1 = sec^2x $$&lt;/div&gt;
+&lt;div class="math"&gt;$$ 1 + cot^2x = csc^2x $$&lt;/div&gt;
+&lt;p&gt;Double-Angle Identities
+&lt;/p&gt;
+&lt;div class="math"&gt;$$ sin2x = 2sinx * cosx $$&lt;/div&gt;
+&lt;div class="math"&gt;$$ cos2x = cos^2x - sin^2x = 1 - 2sin^2x = 2 cos^2x - 1 $$&lt;/div&gt;
+&lt;div class="math"&gt;$$ tan2x = \frac{2tanx}{1-tan^2x} $$&lt;/div&gt;
+&lt;p&gt;Half-Angle Identities
+&lt;/p&gt;
+&lt;div class="math"&gt;$$ sin\frac{x}{2} = \pm\sqrt \frac {1 - cosx}{2} = \frac{1}{2}[1 - cos2x] $$&lt;/div&gt;
+&lt;div class="math"&gt;$$ cos\frac{x}{2} = \pm\sqrt \frac {1 + cosx}{2} = \frac{1}{1}[1 + cos2x]$$&lt;/div&gt;
+&lt;div class="math"&gt;$$ tan\frac{x}{2} = \pm\sqrt \frac {1 - cosx}{1 + cosx} = \frac {1 - cosx}{sinx} = \frac {sinx}{1 + cosx} = \frac{1 - cos2x}{1 + cos2x}$$&lt;/div&gt;
+&lt;p&gt;Inverse functions&lt;/p&gt;
+&lt;p&gt;Here is some inline math: &lt;span class="math"&gt;\(\frac{d}{dt} t = 1\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Here is some block math&lt;sup id="sf-trig-identities-1-back"&gt;&lt;a href="#sf-trig-identities-1" title="with a footnote." class="simple-footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;:&lt;/p&gt;
+&lt;div class="math"&gt;$$\int \frac{sin x}{cos x} dx = -ln(cos x) + C$$&lt;/div&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    var location_protocol = (false) ? 'https' : document.location.protocol;
+    if (location_protocol !== 'http' &amp;&amp; location_protocol !== 'https') location_protocol = 'https:';
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;&lt;ol class="simple-footnotes"&gt;&lt;li id="sf-trig-identities-1"&gt;with a footnote. &lt;a href="#sf-trig-identities-1-back" class="simple-footnote-back"&gt;↩&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;</summary></entry></feed>
